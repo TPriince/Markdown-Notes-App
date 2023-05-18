@@ -43,7 +43,7 @@ function App() {
   // Create new note function
   async function createNewNote() {
     const newNote = {
-      body: "# Type your markdown note's title here",
+      body: "# Type your markdown note's title here. NB: You can resize the sidebar",
       createdAt: Date.now(),
       updatedAt: Date.now(),
     };
@@ -57,7 +57,7 @@ function App() {
   }
 
   // console.log(currentNoteId, currentNote);
-  
+
   //  Update note function
   async function updateNote(text) {
     const docRef = doc(db, "notes", currentNoteId);
